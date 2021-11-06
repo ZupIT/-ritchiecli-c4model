@@ -17,14 +17,23 @@ Container_Boundary(ritchie_system, "Ritchie System") {
     Container(ritchie_formulas, "Fórmulas", "Código arbitrário provido pela pessoa usuária ou comunidade")
 }
 
+Container_Boundary(docker_system, "Docker System") {
+    Container(docker_engine, "Docker Engine", "Manipula contêineres")
+    Container(docker_containers, "Contêineres", "Oferecem ambiente virtual com SDKs/runtimes pré-configurados para compilação e execução de Fórmulas")
+    Container(docker_sdks, "SDKs/runtimes de linguagens de programação diversas", "Compilam e executam Fórmulas")
+
+    Rel(docker_engine, docker_containers, "Cria, inicia, manipula e para")
+    Rel(docker_containers, docker_sdks, "Possuem pré-instalados e configurados os")
+    Rel(docker_sdks, ritchie_formulas, "Compilam e/ou executam", "APIs do SO|Novo processo")
+}
+
 Rel(user, shells, "Abre para invocar comandos do RitchieCLI")
-Rel(shells, ritchie_cli, "Iniciam e chamam")
-Rel(ritchie_cli, shells, "Chama", "Comando shell")
+Rel(shells, ritchie_cli, "Iniciam e chamam", "Shell Exec|Novo processo")
+Rel(ritchie_cli, shells, "Chamam", "Comando shell")
 Rel(ritchie_cli, sdks, "Chama", "Comando shell")
-Rel(sdks, ritchie_formulas, "Compilam e/ou executam")
-Rel(shells, ritchie_formulas, "Executam")
-Rel(docker, ritchie_formulas, "Compila/executa")
-Rel(ritchie_cli, docker, "Chama", "Comando shell")
+Rel(sdks, ritchie_formulas, "Compilam e/ou executam", "APIs do SO|Novo processo")
+Rel(shells, ritchie_formulas, "Executam", "Shell Exec|Novo processo")
+Rel(ritchie_cli, docker_engine, "Chama", "Comando shell")
 Rel(ritchie_cli, remote_repos, "Chama", "HTTPS")
 Rel(ritchie_cli, filesystem, "Lê e grava em", "Golang FS APIs")
 
