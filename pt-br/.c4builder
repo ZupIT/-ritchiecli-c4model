@@ -15,7 +15,6 @@
 	"repoUrl": "",
 	"docsifyTemplate": "",
 	"webPort": "3000",
-	"pdfCss": "C:\\Users\\dcomi\\AppData\\Roaming\\npm\\node_modules\\c4builder\\pdf.css",
 	"includeBreadcrumbs": true,
 	"includeLinkToDiagram": false,
 	"diagramsOnTop": true,
