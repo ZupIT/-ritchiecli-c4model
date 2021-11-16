@@ -19,29 +19,29 @@ module.exports = options => {
   <html lang="en-US">
     <head>
       <meta charset="UTF-8">
-      <title>CharlesCD C4Model</title>
+      <title>RitchieCLI C4Model</title>
   
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
       <meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   
-      <meta name="description" content="Charles is a continuous deployment tool that speeds up the feedback cycle of your application through simultaneous validation with specific user groups.">
-      <meta name="image" content="//docs.charlescd.io/c4model/assets/images/screen.png" />
+      <meta name="description" content="Ritchie is an arbitrary code execution & sharing engine with a customizable CLI that allows you to automate any kind of activity and share it with anyone you want.">
+      <meta name="image" content="//docs.ritchiecli.io/c4model/assets/images/screen.png" />
       
       <!-- OG tags-->
-      <meta property="og:title" content="CharlesCD" />
-      <meta property="og:url" content="https://docs.charlescd.io/c4model" />
+      <meta property="og:title" content="RitchieCLI" />
+      <meta property="og:url" content="https://docs.ritchiecli.io/c4model" />
       <meta property="og:type" content="website"/>
-      <meta property="og:image" content="//docs.charlescd.io/c4model/assets/images/screen.png" />
-      <meta property="og:description" content="Charles is a continuous deployment tool that speeds up the feedback cycle of your application through simultaneous validation with specific user groups." />
+      <meta property="og:image" content="//docs.ritchiecli.io/c4model/assets/images/screen.png" />
+      <meta property="og:description" content="Ritchie is an arbitrary code execution & sharing engine with a customizable CLI that allows you to automate any kind of activity and share it with anyone you want." />
       <meta property="og:locale" content="en-US" />
-      <meta property="og:site_name" content="CharlesCD" />
-      <meta property="og:titleTemplate" content="CharlesCD" />
+      <meta property="og:site_name" content="RitchieCLI" />
+      <meta property="og:titleTemplate" content="RitchieCLI" />
       <meta property="og:locale:alternate" content="pt-BR" />
       <!-- OG tags-->
   
-      <link rel="icon" href="//charlescd.io/site/favicon-32x32.png?v=9709489f3b54772dfba88d6a4597ae2e" />
+      <link rel="icon" href="//ritchiecli.io/site/favicon-32x32.png?v=86a4c7f7892733b2cea94004b2824e64" />
       <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
-      <link href="//docs.charlescd.io/c4model/assets/css/theme.css" rel="stylesheet" type="text/css" />
+      <link href="//docs.ritchiecli.io/c4model/assets/css/theme.css" rel="stylesheet" type="text/css" />
     </head>
   
     <body>
@@ -73,7 +73,7 @@ module.exports = options => {
               '/.*/_sidebar.md': '/_sidebar.md'
             },
             logo:
-              '//raw.githubusercontent.com/ZupIT/charlescd/main/images/logo.png'
+              '//github.com/ZupIT/ritchie-cli/raw/main/docs/img/ritchie-banner.png'
           },
           null,
           2
@@ -84,7 +84,7 @@ module.exports = options => {
       <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
       <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
       <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
-      <script src="//docs.charlescd.io/c4model/assets/js/theme.js"></script>
+      <script src="//docs.ritchiecli.io/c4model/assets/js/theme.js"></script>
     </body>
   </html>`
 }
