@@ -17,8 +17,6 @@
 name: DEV - Build & Deploy 
 
 on:
-  push:
-    branches: [ main ]
   workflow_dispatch:
     checkout_ref:
         description: 'The branch, tag or SHA to checkout. When checking out the repository that triggered a workflow, this defaults to the reference or SHA for that event. Otherwise, uses the default branch.'
