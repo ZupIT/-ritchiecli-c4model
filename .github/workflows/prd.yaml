@@ -42,6 +42,10 @@ jobs:
           aws-access-key-id: ${{ secrets.PRD_AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.PRD_AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.PRD_AWS_REGION }}
+          role-to-assume: ${{ secrets.PRD_AWS_ROLE_TO_ASSUME }}
+          role-duration-seconds: 1200
+          role-session-name: OfficialDocS3Session
+          role-skip-session-tagging: true
 
       - name: Remove Custom C4Builder Assets from S3
         run: aws s3 rm s3://${{ secrets.PRD_AWS_S3_BUCKET }}/c4model/assets/ --recursive

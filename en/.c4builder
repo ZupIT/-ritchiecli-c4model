@@ -11,7 +11,7 @@
 	"generateWEB": true,
 	"includeNavigation": true,
 	"includeTableOfContents": true,
-	"webTheme": "https://docs.charlescd.io/c4model/assets/css/theme.css",
+	"webTheme": "https://docs.ritchiecli.io/c4model/assets/css/theme.css",
 	"repoUrl": "",
 	"docsifyTemplate": "../assets/js/docsify.template.js",
 	"webPort": "3000",
