@@ -73,7 +73,7 @@ module.exports = options => {
               '/.*/_sidebar.md': '/_sidebar.md'
             },
             logo:
-              '//docs.ritchiecli.io/c4model/assets/images/logo-ritchie.png'
+              '//raw.githubusercontent.com/ZupIT/ritchiecli-c4model/main/assets/images/logo-ritchie.png'
           },
           null,
           2
