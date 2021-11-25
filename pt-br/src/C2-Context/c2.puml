@@ -8,7 +8,6 @@ Person(user, "Pessoa Desenvolvedora de SW/QA/Power User/Executora ou Gestora da 
 
 System_Ext(shells, "Shells do Windows/MacOS/Linux (CMD/PowerShell/Bash/Zsh)", "Intermediam interações com o RitchieCLI, SDKs/Runtimes e/ou Docker, e executam Fórmulas se estas forem escritas em linguagem shell")
 System_Ext(sdks, "SDKs/runtimes de linguagens de programação diversas", "Compilam e executam Fórmulas")
-System_Ext(docker, "Docker", "Provê ambiente padronizado de compilação e execução de Fórmulas, com shells/SDKs/runtimes pré-configurados")
 System_Ext(remote_repos, "APIs GitHub/Gitlab/Bitbucket", "Provêem acesso a repositórios de Fórmulas")
 System_Ext(filesystem, "Sistema de arquivos", "Armazena Fórmulas e seus templates")
 
@@ -29,7 +28,7 @@ Container_Boundary(docker_system, "Docker System") {
 
 Rel(user, shells, "Abre para invocar comandos do RitchieCLI")
 Rel(shells, ritchie_cli, "Iniciam e chamam", "Shell Exec|Novo processo")
-Rel(ritchie_cli, shells, "Chamam", "Comando shell")
+Rel(ritchie_formulas, ritchie_formulas, "Chamam", "Comando shell")
 Rel(ritchie_cli, sdks, "Chama", "Comando shell")
 Rel(sdks, ritchie_formulas, "Compilam e/ou executam", "APIs do SO|Novo processo")
 Rel(shells, ritchie_formulas, "Executam", "Shell Exec|Novo processo")
