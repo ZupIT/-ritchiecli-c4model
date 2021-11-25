@@ -39,7 +39,7 @@ module.exports = options => {
       <meta property="og:locale:alternate" content="pt-BR" />
       <!-- OG tags-->
   
-      <link rel="icon" href="//ritchiecli.io/site/favicon-32x32.png?v=86a4c7f7892733b2cea94004b2824e64" />
+      <link rel="icon" href="//ritchiecli.io/favicon-32x32.png?v=86a4c7f7892733b2cea94004b2824e64" />
       <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
       <link href="//docs.ritchiecli.io/c4model/assets/css/theme.css" rel="stylesheet" type="text/css" />
     </head>
@@ -73,7 +73,7 @@ module.exports = options => {
               '/.*/_sidebar.md': '/_sidebar.md'
             },
             logo:
-              '//github.com/ZupIT/ritchie-cli/raw/main/docs/img/ritchie-banner.png'
+              '//raw.githubusercontent.com/ZupIT/ritchiecli-c4model/main/assets/images/logo-ritchie.png'
           },
           null,
           2
