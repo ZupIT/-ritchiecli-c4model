@@ -1,30 +1,28 @@
 ## **Overview**
 
-A arquitetura de software define as partes de um software e é também a estratégia tecnológica de um produto/projeto. Com isso, é muito importante que os usuários vejam uma atualização frequente, porque sem isso pode ocorrer falhas.
+Software architecture defines the parts of the software and it is also a technological strategy of a product/project.  However, it needs to be always updated to avoid failures.
+ 
+### **Architecture documentation**
+When you document the architecture of a project, it is a process that requires time, tools knowledge, and diagramming techniques. The biggest challenge is to avoid two scenarios:
 
-### **Documentação da arquitetura**
-Documentar a arquitetura de um projeto é um processo que exige tempo, conhecimento de ferramentas e técnicas para a diagramação. O maior desafio é evitar dois cenários:
+- **Scenario 1:** Complex documentation that can be confusing, obsolete and loses its purpose.
 
-- **Cenário 1:** Documentações complexas que ficam confusas, obsoletas, e que acabam perdendo o seu propósito, ou seja, isso é gastar tempo para algo que não será utilizado.
+- **Scenario 2:** Documentation with flaws and lack of information. 
 
-- **Cenário 2:** Documentações com falhas e pouca informação. 
+In both cases, the final result can make the user confused. 
 
-Em ambos os casos, o resultado final pode gerar confusão para o usuário. 
+The project's architecture documentation is important for the users to have a better experience. So, when you document you should answer some questions, for example:  
+- How does my system integrate with other systems?  
+- How can I scale my application?
+- How to ensure security between my applications?
 
-A arquitetura do projeto é crucial para melhorar a experiência do usuário, por isso é necessário documentar, porque ela responde várias perguntas, por exemplo: 
-- Como o meu sistema integra entre ele mesmo e outros sistemas? 
-- Como consigo escalar a minha aplicação? 
-- Como garantir a segurança entre as minhas aplicações?
+Ritchie CLI team thought about this and we created a view of our architecture, the C4 model. 
 
-Pensando nisso, o time do RitchieCLI criou uma visualização da nossa arquitetura de um modo mais simples, o C4 Model.
+## **What is C4 Model?**
+The C4 Model was created by Simon Brow,  based on 4+1 and UML. The model helps to solve architectural documentation problems. 
+It is divided into four types of diagrams and there are different levels of detail and a target audience.
+The goal is to bring more clarity to the project and you can find more details and information at every level.
 
+## **What is Ritchie CLI?**
 
-## **O que é o C4Model?**
-
-O C4 Model foi criado por Simon Brown e é baseado no 4+1 e UML. O modelo ajuda a resolver problemas da documentação de arquitetura, é dividido em quatro tipos de diagramas, onde cada um possui um nível diferente de detalhes e público alvo. 
-A ideia é trazer mais clareza para o projeto e a cada nível você encontra mais detalhes e informações do que o nível anterior. 
-
-
-## **O que é o RitchieCLI?**
-
-O RitchieCLI é uma interface de linha de comando e motor de execução e compartilhamento de código arbitrário. A ferramenta permite a pessoas usuárias criar, executar e compartilhar automações ou qualquer tipo de código de programação com simplicidade e rapidez. Seu código é totalmente open source e seu desenvolvimento ocorre junto da comunidade.
+Ritchie CLI is an open source command line interface, arbitrary code sharing, and execution engine. The tool allows the user to create, execute and share automation or any type of programming code. It is simple and quick.

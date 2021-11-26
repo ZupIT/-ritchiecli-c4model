@@ -4,19 +4,19 @@
 LAYOUT_WITH_LEGEND()
 LAYOUT_LEFT_RIGHT()
 
-Person(user, "Pessoa Desenvolvedora de SW/QA/Power User/Executora ou Gestora da Infra Corporativa/Parte de ambiente corporativo", "Qualquer pessoa que deseje executar e/ou compartilhar código arbitrário para fins de automação ou outros em sua máquina pessoal e/ou corporativa")
+Person(user, "SW Development Person/QA/Power User or Manager of Corporate Infrastructure/Part of the corporate environment").
 
-System(ritchiecli, "RitchieCLI", "Motor de execução e compartilhamento de código arbitrário")
-System_Ext(docker, "Docker")
-System_Ext(shells, "Shells do Windows/MacOS/Linux (CMD/PowerShell/Bash/Zsh)")
-System_Ext(sdks, "SDKs/runtimes de linguagens de programação diversas")
-System_Ext(remote_repos, "Repositórios de código remotos (GitHub, Gitlab ou Bitbucket)")
+System(ritchiecli, "RitchieCLI", "Execution engine and arbitrary code sharing").
+System_Ext(docker, "Docker").
+System_Ext(shells, "Windows/MacOS/Linux (CMD/PowerShell/Bash/Zsh) shells").
+System_Ext(sdks, "Several SDKs/runtimes programming languages").
+System_Ext(remote_repos, "Remote code repositories (GitHub, Gitlab ou Bitbucket)").
 
-Rel(user, shells, "Invoca comandos do RitchieCLI para executar ou compartilhar código arbitrário em/da sua máquina")
-Rel(shells, ritchiecli, "Repassa comandos da pessoa usuária")
-Rel(ritchiecli, shells, "Invoca shells com finalidade de interagir com estas ou intermediar interações com Docker/SDKs/runtimes")
-Rel(shells, sdks, "Invoca compilação e/ou execução de código arbitrário em ambiente nativo")
-Rel(shells, docker, "Delega compilação e/ou execução de código arbitrário para contêineres")
-Rel(ritchiecli, remote_repos, "Importa ou exporta código arbitrário")
+Rel(user, shells, "Compile, run and/or interpret Ritchie CLI commands to execute or share arbitrary code in your machine").
+Rel(shells, ritchiecli, "Forward user commands")
+Rel(ritchiecli, shells, "Execute shells to interact and intermediate interactions with Docker/SDKs/runtimes").
+Rel(shells, sdks, "Compile, run and/or interpret arbitrary code in native environment").
+Rel(shells, docker, "Delegates arbitrary code compilation and/or execution for containers").
+Rel(ritchiecli, remote_repos, "Export/import arbitrary code").
 
 @enduml

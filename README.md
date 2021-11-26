@@ -1,15 +1,27 @@
-# **RitchieCLI C4 model**
+# **Ritchie-CLI C4-model**
 
-## **What is RitchieCLI?**
+## **Table of contents**
+### 1. [**About**](#about)
+### 2. [**Getting started**](#getting-started)
+>#### 2.1.  [**Requirements**](#requirements)
+### 3. [**Usage**](#usage)
+>#### 3.1. [**Structure**](#structure)
+>#### 3.2. [**Generating docs files**](#generating-docs-files)
+>#### 3.3. [**Changing configurations**](#changing-configurations)
+### 4. [**Documentation**](#documentation)       
+### 5. [**Contributing**](#contributing)
+### 6. [**License**](#license)
+### 7. [**Community**](#community)
 
-RitchieCLI is an open source CLI and arbitrary code execution/sharing engine that allows people to easily & quickly create, execute, and/or share automations or any kind of programming code.
+## **About**
 
-Check out for more information: 
-- [**RitchieCLI repository**](https://github.com/ZupIT/ritchie-cli)
+Ritchie CLI is an open source CLI and arbitrary code execution/sharing engine that allows people to easily & quickly create, execute, and/or share automations or any kind of programming code.
 
-- [**RitchieCLI documentation**](https://docs.ritchiecli.io/) 
+For more information, check out [**Ritchie CLI repository**](https://github.com/ZupIT/ritchie-cli).
 
-## **Introduction**
+- [**Ritchie CLI documentation**](https://docs.ritchiecli.io/) 
+
+## **Getting Started**
 This project was created using [**4builder**](https://adrianvlupu.github.io/C4-Builder/) to show RitchieCLI's architecture, see below the tools we used:  
 
 - [**PlantUml**](http://plantuml.com/) creates diagrams from plain text.
@@ -22,14 +34,7 @@ This project was created using [**4builder**](https://adrianvlupu.github.io/C4-B
 
 - [**vscode-plantuml**](https://github.com/qjebbs/vscode-plantuml) plugin for Visual Studio Code to view diagrams from design time.
 
-## **Structure**
-
-This project has two sections:
-
-1. **pt-br**: C4Model in Portuguese (Brazilian).
-2. **en**: C4Model in English.
-
-## **Requirements**
+### **Requirements**
 Check out below the requirement to edit, run and build this project:
 
 **1.** [**Node & NPM**](https://nodejs.org/en/)
@@ -41,30 +46,39 @@ Check out below the requirement to edit, run and build this project:
 **3.** [**Vscode-plantuml Plugin**](https://github.com/qjebbs/vscode-plantuml). 
 
 
-## **Generating docs files**
+## **Usage**
+### **Structure**
+This project has two sections:
+
+1. **pt-br**: C4Model in Portuguese (Brazilian).
+2. **en**: C4Model in English.
+
+
+### **Generating docs files**
  
  `c4builder site`
 
-## **Changing configurations**
+### **Changing configurations**
 
 If you want to modify any configuration access:
 -  `.c4builder` file on [**en/.c4builder**](https://github.com/ZupIT/ritchiecli-c4model//tree/main/en/.c4builder)  or [**pt-br/.c4builder**](https://github.com/ZupIT/ritchiecli-c4model//tree/main/pt-br/.c4builder).
 
+## **Documentation**
+You can find Ritchie's documentation on our [**website**](https://ritchiecli.io/).
 
-# **Contributing**
+## **Contributing**
 
 Feel free to use, recommend improvements or contribute to new implementations.
 
-Do you want to know more on how to contribute, check out [**RitchieCLI contributing guide**](https://github.com/ZupIT/ritchie-cli/blob/main/CONTRIBUTING.md) repository.
+Check out our [**contributing guide**](https://github.com/ZupIT/ritchie-cli/blob/main/CONTRIBUTING.md) to learn about our development process, how to suggest bug fixes and improvements. 
 
-# **Community**
+## **License**
+ [**Apache License 2.0**](https://github.com/ZupIT/ritchiecli-c4model/blob/main/LICENSE).
+
+## **Community**
 
 Feel free to reach out to us at:
 
 - [**GitHub Issues**](https://github.com/ZupIT/ritchie-cli/issues)
 - [**Zup Open Source Forum**](https://forum.zup.com.br)
 
-
-Thank you for evolving RitchieCLI!!!:heart::heart::heart:
-
-Keep evolving :rocket:
