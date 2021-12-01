@@ -1,1 +1,5 @@
-Uma Fórmula é um programa auto-suficiente e adaptado para ser invocado e/ou compartilhado via RitchieCLI. Fórmulas podem ser escritas em qualquer linguagem de programação -- o RitchieCLI tem suporte out-of-box para uma lista finita de linguagens, mas, por meio da edição de arquivos de template, pode ser adaptado de maneira relativamente fácil para trabalhar com novas opções.
+## **Fórmulas**
+Uma Fórmula é um programa auto-suficiente e adaptado para ser invocado e/ou compartilhado via Ritchie CLI. 
+
+- As fórmulas podem ser escritas em qualquer linguagem de programação. 
+- O Ritchie CLI tem suporte out-of-box (fora da caixa) para uma lista finita de linguagens, mas por meio da edição de arquivos de template, pode ser adaptado para você trabalhar de uma maneira mais fácil com novas opções.  
