@@ -17,6 +17,9 @@
 name: DEV - Build & Deploy 
 
 on:
+  push:
+    branches: [ main ]
+
   workflow_dispatch:
     inputs:
       checkout_ref:

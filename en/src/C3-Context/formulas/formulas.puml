@@ -4,29 +4,29 @@
 LAYOUT_WITH_LEGEND()
 LAYOUT_LEFT_RIGHT()
 
-System_Ext(shells, "Windows/MacOS/Linux (CMD/PowerShell/Bash/Zsh) shells", "Intermediate interactions with Ritchie CLI, SDKs/Runtimes and/or Docker, and execute Formulas written in shell language").
-System_Ext(sdks, "SDKs/runtimes of several programming languages", "Compile and run Formulas").
-Container(ritchie_cli, "RitchieCLI", "CLI, execution engine and Formula sharing").
+System_Ext(shells, "Windows/MacOS/Linux (CMD/PowerShell/Bash/Zsh) shells", "Intermediate interactions with Ritchie CLI, SDKs/Runtimes and/or Docker, and execute Formulas written in shell language")
+System_Ext(sdks, "SDKs/runtimes of several programming languages", "Compile and run Formulas")
+Container(ritchie_cli, "RitchieCLI", "CLI, execution engine and Formula sharing")
 
 Container_Boundary(ritchie_formulas, "Ritchie Formulas") {
-    Component(ritchie_formulas_metadata, "Metadata", "README.md and other files for use instructions and Formula search/listing information").
-    Component(ritchie_formulas_build_files, "Build files", "config.json, build.sh/bat, Dockerfile and other files to configure and run Formulas").
-    Component(ritchie_formulas_source_files, "Source code", "Arbitrary code provided by the user or the community").
+    Component(ritchie_formulas_metadata, "Metadata", "README.md and other files for use instructions and Formula search/listing information")
+    Component(ritchie_formulas_build_files, "Build files", "config.json, build.sh/bat, Dockerfile and other files to configure and run Formulas")
+    Component(ritchie_formulas_source_files, "Source code", "Arbitrary code provided by the user or the community")
 }
 
 Container_Boundary(docker_system, "Docker System") {
-    Container(docker_engine, "Docker Engine", "Manipulate containers").
-    Container(docker_containers, "Containers", "They offer a virtual environment with pre-configured SDKs/runtimes for compilation and execution of Formulas").
+    Container(docker_engine, "Docker Engine", "Manipulate containers")
+    Container(docker_containers, "Containers", "They offer a virtual environment with pre-configured SDKs/runtimes for compilation and execution of Formulas")
 
-    Rel(docker_engine, docker_containers, "Create, start, manipulate and stop").
-    Rel(docker_containers, ritchie_formulas_build_files, "Call").
+    Rel(docker_engine, docker_containers, "Create, start, manipulate and stop")
+    Rel(docker_containers, ritchie_formulas_build_files, "Call")
 }
 
-Rel(ritchie_cli, ritchie_formulas_build_files, "Call", "Shell Exec|New process").
-Rel(ritchie_formulas_build_files, sdks, "Call (to compile/run the source code)", "Shell command").
-Rel(ritchie_formulas_source_files, ritchie_cli, "Call (to execute Formulas)", "Shell command").
-Rel(ritchie_formulas_source_files, shells, "Call (shell script)", "Shell command").
-Rel(ritchie_cli, docker_engine, "Call (to run Formulas)", "Shell Exec|New process").
-Rel(sdks, ritchie_formulas_source_files, "Compile/run", "Shell Exec|New process").
+Rel(ritchie_cli, ritchie_formulas_build_files, "Call", "Shell Exec|New process")
+Rel(ritchie_formulas_build_files, sdks, "Call (to compile/run the source code)", "Shell command")
+Rel(ritchie_formulas_source_files, ritchie_cli, "Call (to execute Formulas)", "Shell command")
+Rel(ritchie_formulas_source_files, shells, "Call (shell script)", "Shell command")
+Rel(ritchie_cli, docker_engine, "Call (to run Formulas)", "Shell Exec|New process")
+Rel(sdks, ritchie_formulas_source_files, "Compile/run", "Shell Exec|New process")
 
 @enduml
