@@ -17,9 +17,9 @@
 name: PRD - Build & Deploy
 
 on:
-  push:
-    tags:
-      - '*'
+  release:
+    types: [published]
+    
   workflow_dispatch:
     inputs:
       checkout_ref:

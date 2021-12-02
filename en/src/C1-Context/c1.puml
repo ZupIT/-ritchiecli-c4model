@@ -4,19 +4,19 @@
 LAYOUT_WITH_LEGEND()
 LAYOUT_LEFT_RIGHT()
 
-Person(user, "SW Development Person/QA/Power User or Manager of Corporate Infrastructure/Part of the corporate environment").
+Person(user, "SW Development Person/QA/Power User or Manager of Corporate Infrastructure/Part of the corporate environment")
 
-System(ritchiecli, "RitchieCLI", "Execution engine and arbitrary code sharing").
-System_Ext(docker, "Docker").
-System_Ext(shells, "Windows/MacOS/Linux (CMD/PowerShell/Bash/Zsh) shells").
-System_Ext(sdks, "Several SDKs/runtimes programming languages").
-System_Ext(remote_repos, "Remote code repositories (GitHub, Gitlab ou Bitbucket)").
+System(ritchiecli, "RitchieCLI", "Execution engine and arbitrary code sharing")
+System_Ext(docker, "Docker")
+System_Ext(shells, "Windows/MacOS/Linux (CMD/PowerShell/Bash/Zsh) shells")
+System_Ext(sdks, "Several SDKs/runtimes programming languages")
+System_Ext(remote_repos, "Remote code repositories (GitHub, Gitlab ou Bitbucket)")
 
-Rel(user, shells, "Compile, run and/or interpret Ritchie CLI commands to execute or share arbitrary code in your machine").
+Rel(user, shells, "Compile, run and/or interpret Ritchie CLI commands to execute or share arbitrary code in your machine")
 Rel(shells, ritchiecli, "Forward user commands")
-Rel(ritchiecli, shells, "Execute shells to interact and intermediate interactions with Docker/SDKs/runtimes").
-Rel(shells, sdks, "Compile, run and/or interpret arbitrary code in native environment").
-Rel(shells, docker, "Delegates arbitrary code compilation and/or execution for containers").
-Rel(ritchiecli, remote_repos, "Export/import arbitrary code").
+Rel(ritchiecli, shells, "Execute shells to interact and intermediate interactions with Docker/SDKs/runtimes")
+Rel(shells, sdks, "Compile, run and/or interpret arbitrary code in native environment")
+Rel(shells, docker, "Delegates arbitrary code compilation and/or execution for containers")
+Rel(ritchiecli, remote_repos, "Export/import arbitrary code")
 
 @enduml
