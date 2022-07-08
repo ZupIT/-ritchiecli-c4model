@@ -1,3 +1,7 @@
+# The Ritchie CLI project has been archived by Zup Innovation. It might start again eventually; however, we won't deliver support for now.
+
+
+
 # **Ritchie-CLI C4-model**
 
 ## **Table of contents**
@@ -55,7 +59,7 @@ This project has two sections:
 
 
 ### **Generating docs files**
- 
+
  `c4builder site`
 
 ### **Changing configurations**
